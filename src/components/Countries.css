@@ -1,0 +1,30 @@
+.container {
+  margin: 45px 80px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search {
+  padding: 15px 60px 15px 70px;
+  height: 55px;
+  width: 480px;
+  font-size: 14px;
+  font-color: hsl(0, 0%, 52%);
+  border-radius: 5px;
+  border: none;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  box-shadow: 4px 3px 10px 1px rgba(227, 226, 226, 0.5);
+}
+
+.search-icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  color: hsl(0, 0%, 52%)
+}
