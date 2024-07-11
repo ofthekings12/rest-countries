@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Countries.css';
+import './Countries.css';
 
 function Countries() {
   return (
