@@ -1,3 +1,18 @@
 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   margin: 45px 80px;
+
+}
+
+.dropdown {
+  width: 200px;
+  font-size: 14px;
+  color: hsl(0, 0%, 52%);
+  border-radius: 10px;
+  border: none;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  box-shadow: 4px 3px 10px 1px rgba(227, 226, 226, 0.5);
 }
