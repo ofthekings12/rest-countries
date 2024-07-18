@@ -40,7 +40,9 @@ function Countries() {
               className="country-flag"
             />
             <h3>{country.name.common}</h3>
+            <p>{country.population}</p>
             <p>{country.reigon}</p>
+            <p>{country.capital}</p>
           </div>
         ))}
       </div>
