@@ -37,9 +37,6 @@ function Countries() {
   });
 
 
-  // const filteredCountries = selectedRegion ? countries.filter(country => country.region === selectedRegion) : countries;
-
-
   return (
     <>
     <div className="container">
@@ -59,10 +56,12 @@ function Countries() {
               alt={country.name.common}
               className="country-flag"
             />
+            <div className='country-info'>
             <h3>{country.name.common}</h3>
-            <p>{country.population}</p>
-            <p>{country.reigon}</p>
-            <p>{country.capital}</p>
+            <p><b>Population:</b> {country.population}</p>
+            <p><b>Region:</b> {country.region}</p>
+            <p><b>Capital:</b> {country.capital}</p>
+            </div>
           </div>
         ))}
       </div>
