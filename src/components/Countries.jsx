@@ -13,7 +13,7 @@ function Countries() {
   const [countries, setCountries] = useState([]);
   const [regions, setRegions] = useState([]);
   const [selectedRegion, setSelectedRegion] = useState("");
-
+  const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch(URL);
@@ -29,21 +29,26 @@ function Countries() {
     setSelectedRegion(option.value);
   }
 
-  const filteredCountries = selectedRegion ? countries.filter(country => country.region === selectedRegion) : countries;
+  const filteredCountries = countries.filter(country => {
+    return (
+      (!selectedRegion || country.region === selectedRegion) &&
+      (!searchTerm || country.name.common.toLowerCase().includes(searchTerm.toLowerCase()))
+    );
+  });
 
 
+  // const filteredCountries = selectedRegion ? countries.filter(country => country.region === selectedRegion) : countries;
 
-// const options = ["one", "two", "three"];
 
   return (
     <>
     <div className="container">
-      <SearchBar />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Dropdown
         className="dropdown"
         options={regions}
         onChange={handleDropdownChange}
-        placeholder="Select an option"
+        placeholder="Filter by Region"
       /> 
       </div>
       <div className="countries-grid">
