@@ -1,3 +1,21 @@
-body {
-  background-color: hsl(0, 0%, 98%);
+:root {
+  --bg-color-light: hsl(0, 0%, 100%);
+  --text-color-light: hsl(200, 15%, 8%);
+  --border-color-light: #ddd;
+  --box-shadow-light: rgba(227, 226, 226, 0.5);
+
+  --bg-color-dark: hsl(0, 0%, 10%);
+  --text-color-dark: hsl(0, 0%, 90%);
+  --border-color-dark: hsl(0, 0%, 50%);
+  --box-shadow-dark: rgba(0, 0, 0, 0.5);
 }
+
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+/* .dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+} */

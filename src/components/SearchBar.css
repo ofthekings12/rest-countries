@@ -8,11 +8,16 @@
   height: 55px;
   width: 480px;
   font-size: 14px;
-  color: hsl(0, 0%, 52%);
+  color: var(--text-color-light);
   border-radius: 5px;
   border: none;
   font-family: "Nunito Sans", Arial, sans-serif;
-  box-shadow: 4px 3px 10px 1px rgba(227, 226, 226, 0.5);
+  box-shadow: 4px 3px 10px 1px var(--box-shadow-light);
+}
+
+.dark-mode .search {
+  color: var(--text-color-dark);
+  box-shadow: 4px 3px 10px 1px var(--box-shadow-dark);
 }
 
 .search-icon {
@@ -22,5 +27,9 @@
   transform: translateY(-50%);
   width: 25px;
   height: 25px;
-  color: hsl(0, 0%, 52%)
+  color: var(--text-color-light);
+}
+
+.dark-mode .search-icon {
+  color: var(--text-color-dark);
 }
