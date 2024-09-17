@@ -18,6 +18,7 @@
 .dark-mode .search {
   color: var(--text-color-dark);
   box-shadow: 4px 3px 10px 1px var(--box-shadow-dark);
+  background-color: var(--bg-color-dark);
 }
 
 .search-icon {

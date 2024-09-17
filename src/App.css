@@ -15,7 +15,12 @@ body {
   color: var(--text-color-light);
 }
 
-/* .dark-mode {
+.dark-mode {
   background-color: var(--bg-color-dark);
   color: var(--text-color-dark);
-} */
+  --icon-color: hsl(0, 0%, 90%);
+}
+
+.dark-icon {
+  fill: var(--icon-color);
+}

@@ -14,7 +14,7 @@
   box-shadow: 4px 3px 10px 1px var(--box-shadow-dark);
 }
 
-.dark-mode h1, .dark-mode h4 {
+.dark-mode h1, .dark-mode h4, .dark-mode .dark-icon {
   color: var(--text-color-dark);
 }
 
@@ -40,7 +40,7 @@ h4 {
   margin: 5px;
 }
 
-.dark-mode {
+.dark-mode-button {
   display: flex;
   flex-direction: row;
   align-items: center;
