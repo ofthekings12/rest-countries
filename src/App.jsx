@@ -1,13 +1,18 @@
 import Navbar from "./components/Navbar";
 import Countries from "./components/Countries";
-import './App.css'
+import CountryDetails from "./components/CountryDetails";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Countries/>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Countries />} />
+        <Route path="/country/:countryCode" element={<CountryDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
