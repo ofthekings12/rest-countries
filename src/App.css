@@ -6,7 +6,7 @@
 
   --bg-color-dark: hsl(0, 0%, 10%);
   --text-color-dark: hsl(0, 0%, 90%);
-  --border-color-dark: hsl(0, 0%, 50%);
+  --border-color-dark: hsl(0, 0%, 0%);
   --box-shadow-dark: rgba(0, 0, 0, 0.5);
 }
 

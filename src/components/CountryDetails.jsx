@@ -30,7 +30,7 @@ function CountryDetails() {
         {/* <div className='country-flag'> */}
         <img
           className="flag-img"
-          src={country.flags.png}
+          src={country.flags.svg}
           alt={`${country.name.common} flag`}
         />
         {/* </div> */}
