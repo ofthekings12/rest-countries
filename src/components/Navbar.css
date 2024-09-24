@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  width: 100%;
   background-color: var(--bg-color-light);
   box-shadow: 4px 3px 10px 1px var(--box-shadow-light);
 
@@ -23,7 +24,7 @@ h1 {
   font-size: 25px;
   font-family: "Nunito Sans", Arial, sans-serif;
   font-weight: 800;
-  color: hsl(200, 15%, 8%)
+  color: hsl(200, 15%, 8%);
 }
 
 h4 {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,7 +20,9 @@ function Navbar() {
   
   return (
     <div className="navbar">
+      <Link to={'/'}  style={{ textDecoration: 'none' }}>
       <h1>Where in the world?</h1>
+      </Link>
       <h4 className="dark-mode-button" onClick={toggleDarkMode}>
         <svg className="dark-icon"
           fill="#000000"
