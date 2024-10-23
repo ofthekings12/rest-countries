@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./CountryDetails.css";
 
 function CountryDetails() {
@@ -34,6 +34,7 @@ function CountryDetails() {
           alt={`${country.name.common} flag`}
         />
         {/* </div> */}
+          <div className="country-details-2">
         <div className="country-details">
           <div className="country-details-left">
             <div className="country-name">{country.name.common}</div>
@@ -53,20 +54,6 @@ function CountryDetails() {
               <strong>Capital:</strong>
               {country.capital}
             </p>
-            <div className="country-details-bottom">
-              <p>
-                <strong>Border Countries:</strong>
-                {country.borders?.length > 0 ? (
-                  country.borders.map((borderCode) => (
-                    <button key={borderCode} className="border-button">
-                      {borderCode}
-                    </button>
-                  ))
-                ) : (
-                  <span>None</span>
-                )}
-              </p>
-            </div>
           </div>
           <div className="country-details-right">
             <p>
@@ -84,7 +71,25 @@ function CountryDetails() {
             </p>
           </div>
         </div>
+        <div className="country-details-bottom">
+              <p>
+                <strong>Border Countries:</strong>
+                {country.borders?.length > 0 ? (
+                  country.borders.map((borderCode) => (
+                    <Link to={`/country/${borderCode}`} key={borderCode}>
+                    <button key={borderCode} className="border-button">
+                      {borderCode}
+                    </button>
+                    </Link>
+                  ))
+                ) : (
+                  <span>None</span>
+                )}
+              </p>
+              </div>
+            </div>
       </div>
+      
     </>
   );
 }
