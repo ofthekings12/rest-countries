@@ -26,6 +26,7 @@ function CountryDetails() {
 
   return (
     <>
+
       <div className="flag-details-container">
         {/* <div className='country-flag'> */}
         <img
