@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -53,7 +53,7 @@
 
 .country-details-left,
 .country-details-right {
-  text-align: center;
+  text-align: left;
   padding: 10px 20px;
 }
 
@@ -82,7 +82,7 @@
 
 .country-details-bottom {
   justify-content: center;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   padding-left: 0;
 }
