@@ -91,7 +91,6 @@
   margin: 25px;
 }
 
-/* Mobile screens (max-width: 600px) */
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -104,26 +103,25 @@
   }
 
   .countries-grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    grid-template-columns: repeat(1, 1fr); 
     margin: 0 20px;
     gap: 15px;
   }
 
   .country-card {
-    width: 100%; /* Take full width on mobile */
+    width: 100%;
     margin: 10px 0;
   }
 
   .country-flag {
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
   }
 
   .disclaimer h1, .disclaimer h2 {
-    font-size: 18px; /* Reduce font size on mobile */
+    font-size: 18px;
   }
 }
 
-/* Tablet screens (min-width: 600px and max-width: 1024px) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .container {
     flex-direction: column;
@@ -132,17 +130,17 @@
   }
 
   .dropdown {
-    width: 80%; /* Adjust the dropdown width for tablets */
+    width: 80%; 
     margin-bottom: 20px;
   }
 
   .countries-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two-column layout for tablets */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
   .country-card {
-    width: 90%; /* Slightly wider cards for tablets */
+    width: 90%; 
     margin: 10px;
   }
 
@@ -155,7 +153,7 @@
   }
 }
 
-/* Larger screens (min-width: 1024px) */
+
 @media (min-width: 1024px) {
   .container {
     margin: 45px 80px;
@@ -168,7 +166,7 @@
   }
 
   .countries-grid {
-    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
   }
 

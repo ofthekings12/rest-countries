@@ -35,12 +35,11 @@
   color: var(--text-color-dark);
 }
 
-/* Styles for tablets (medium screens) */
 @media (max-width: 1024px) {
   .search {
     width: 400px;
     font-size: 13px;
-    padding: 15px 50px 15px 60px; /* Adjust padding to fit */
+    padding: 15px 50px 15px 60px;
   }
 
   .search-icon {
@@ -50,7 +49,7 @@
   }
 }
 
-/* Styles for smaller tablets and larger phones (small screens) */
+
 @media (max-width: 768px) {
   .search {
     width: 300px;
@@ -66,7 +65,7 @@
   }
 }
 
-/* Styles for mobile screens (extra small screens) */
+
 @media (max-width: 480px) {
   .search {
     width: 250px;

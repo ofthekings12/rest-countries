@@ -1,4 +1,3 @@
-/* Flag Details Container */
 .flag-details-container {
   padding: 0px 20px;
   height: auto;
@@ -9,7 +8,6 @@
   align-items: center;
 }
 
-/* Flag Image */
 .flag-img {
   width: 100%;
   max-width: 500px;
@@ -19,10 +17,9 @@
   border: 1px solid var(--border-color-dark);
 }
 
-/* Country Name */
 .country-name {
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   padding-bottom: 20px;
 }
 
@@ -38,7 +35,6 @@
   }
 }
 
-/* Country Details Container */
 .country-details {
   display: flex;
   flex-direction: column;
@@ -54,7 +50,7 @@
   }
 }
 
-/* Left and Right Country Details */
+
 .country-details-left,
 .country-details-right {
   text-align: center;
@@ -69,21 +65,21 @@
   }
 }
 
-/* Adjust padding for right details section on larger screens */
+
 @media (min-width: 1024px) {
   .country-details-right {
     padding-top: 40px;
   }
 }
 
-/* Border Countries Button */
+
 .border-button {
   padding: 5px 15px;
   margin: 5px;
   font-size: 14px;
 }
 
-/* Country Details Bottom */
+
 .country-details-bottom {
   justify-content: center;
   text-align: center;
@@ -99,7 +95,7 @@
   }
 }
 
-/* Adjust layout for larger screens */
+
 @media (min-width: 768px) {
   .flag-details-container {
     flex-direction: row;
@@ -126,7 +122,6 @@
   }
 }
 
-/* Responsive Font Size Adjustments */
 p {
   font-size: 14px;
   padding-bottom: 10px;

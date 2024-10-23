@@ -50,10 +50,10 @@ h4 {
   margin: 10px;
 }
 
-/* Tablet (768px and above) */
+
 @media (max-width: 1024px) {
   .navbar {
-    height: auto; /* Allow height to adjust based on content */
+    height: auto;
     padding: 0 40px;
   }
 
@@ -73,13 +73,13 @@ h4 {
   }
 }
 
-/* Mobile (less than 768px) */
+
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: auto; /* Let content dictate the height */
+    height: auto;
     padding: 10px;
     text-align: center;
   }
@@ -104,7 +104,7 @@ h4 {
   }
 }
 
-/* Small Mobile (less than 480px) */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 10px 5px;
