@@ -28,13 +28,6 @@
 }
 
 
-@media (min-width: 768px) {
-  .dropdown {
-    width: 200px;
-    margin-top: 0;
-  }
-}
-
 .dark-mode .dropdown {
   color: var(--text-color-dark) !important;
   background-color: var(--bg-color-dark);
@@ -49,19 +42,6 @@
   margin-top: 20px;
 }
 
-
-@media (min-width: 768px) {
-  .countries-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  .countries-grid {
-    grid-template-columns: repeat(4, 1fr); /* Four columns for desktop */
-    margin: 0px 45px;
-  }
-}
 
 .country-card {
   width: 250px;
@@ -111,12 +91,3 @@
   margin: 25px;
 }
 
-@media (min-width: 1024px) {
-  .country-card h3 {
-    font-size: 20px;
-  }
-
-  .country-card p {
-    font-size: 18px;
-  }
-}
