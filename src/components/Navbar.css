@@ -49,3 +49,79 @@ h4 {
   align-items: center;
   margin: 10px;
 }
+
+/* Tablet (768px and above) */
+@media (max-width: 1024px) {
+  .navbar {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 10px 40px;
+  }
+
+  h4 {
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+
+  .dark-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mobile (less than 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Let content dictate the height */
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+
+  .dark-mode-button {
+    margin: 5px;
+  }
+
+  .dark-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Small Mobile (less than 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 5px;
+  }
+
+  h1 {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  h4 {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .dark-icon {
+    width: 14px;
+    height: 14px;
+  }
+}

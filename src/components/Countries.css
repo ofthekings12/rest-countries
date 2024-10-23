@@ -91,3 +91,96 @@
   margin: 25px;
 }
 
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .dropdown {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .countries-grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout */
+    margin: 0 20px;
+    gap: 15px;
+  }
+
+  .country-card {
+    width: 100%; /* Take full width on mobile */
+    margin: 10px 0;
+  }
+
+  .country-flag {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .disclaimer h1, .disclaimer h2 {
+    font-size: 18px; /* Reduce font size on mobile */
+  }
+}
+
+/* Tablet screens (min-width: 600px and max-width: 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .dropdown {
+    width: 80%; /* Adjust the dropdown width for tablets */
+    margin-bottom: 20px;
+  }
+
+  .countries-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for tablets */
+    gap: 20px;
+  }
+
+  .country-card {
+    width: 90%; /* Slightly wider cards for tablets */
+    margin: 10px;
+  }
+
+  .country-flag {
+    height: 150px;
+  }
+
+  .disclaimer h1, .disclaimer h2 {
+    font-size: 20px;
+  }
+}
+
+/* Larger screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    margin: 45px 80px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    width: 200px;
+  }
+
+  .countries-grid {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    gap: 30px;
+  }
+
+  .country-card {
+    width: 250px;
+  }
+
+  .country-flag {
+    height: 170px;
+  }
+
+  .disclaimer h1, .disclaimer h2 {
+    font-size: 24px;
+  }
+}
