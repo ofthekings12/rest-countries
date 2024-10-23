@@ -38,10 +38,10 @@ function Countries() {
 
   return (
     <>
-    <div className="disclaimer">
+    {/* <div className="disclaimer">
       <h1>🚧 This project is in progress 🚧</h1>
       <h2>Changes and updates occur in real time</h2>
-    </div>
+    </div> */}
       <div className="container">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <Dropdown
